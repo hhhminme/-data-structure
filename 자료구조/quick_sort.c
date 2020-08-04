@@ -2,7 +2,7 @@
 int data[] = { 4,10,5,3,2,9,7,8,6,1 };
 int number = 10; 
 
-quickSort(int* data, int start, int end) {
+void quickSort(int* data, int start, int end) {
 	if (start >= end) {
 		return;
 	}

@@ -27,5 +27,17 @@
     <ClCompile Include="quick_sort.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="단순정렬2750.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="test.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="세수정렬2752.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="100만개 정렬_2751.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
