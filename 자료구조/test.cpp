@@ -1,23 +1,25 @@
 #include <stdio.h>
-#define number 10
-int sorted[10];
+int size = 8; 
+int sorted[8];
 
-void merge(int a[], int m, int middle, int n) {
-	int i = m; 
+void merge(int a[], int m, int middle, int n){
+	int i = m;
 	int j = middle + 1; 
-	int k = m; 
+	int k = m;
+	//작은 순서대로 배열에 삽입 
 
 	while (i <= middle && j <= n) {
 		if (a[i] <= a[j]) {
-			sorted[k] = a[i]; 
+			sorted[k] = a[i];
 			i++;
 		}
-		else {
+		else{
 			sorted[k] = a[j];
 			j++;
 		}
 		k++;
 	}
+	//남은 데이터도 삽입 
 	if (i > middle) {
 		for (int t = j; t <= n; t++) {
 			sorted[k] = a[t];
@@ -30,14 +32,14 @@ void merge(int a[], int m, int middle, int n) {
 			k++;
 		}
 	}
-	//정렬된 배열을 삽입
+	//정렬된 배열을 삽입 
 	for (int t = m; t <= n; t++) {
 		a[t] = sorted[t];
 	}
 }
 
 void mergeSort(int a[], int m, int n) {
-	//이외의 경우는 크기가 1개인 경우 
+	//이외의 경우는 크기가 1인경우 
 	if (m < n) {
 		int middle = (m + n) / 2;
 		mergeSort(a, m, middle);
@@ -47,11 +49,10 @@ void mergeSort(int a[], int m, int n) {
 }
 
 int main(void) {
-	int array[number] = { 1,5,2,9,10,8,7,3,2,4 };
-	mergeSort(array, 0, number - 1);
-	for (int i = 0; i < number; i++) {
+	int array[8] = { 7,6,5,8,3,5,9,1 };
+	mergeSort(array, 0, size - 1);
+	for (int i = 0; i < size; i++) {
 		printf("%d ", array[i]);
 	}
-
-	return 0;
+	return 0; 
 }
