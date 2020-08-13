@@ -1,2 +1,3 @@
-﻿  heap_sort.cpp
+﻿  test.cpp
+C:\Users\허민\Google 드라이브\자료구조\자료구조\test.cpp(33,7): warning C4101: 'x' :참조되지 않은 지역 변수입니다.
   자료구조.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\자료구조.exe
