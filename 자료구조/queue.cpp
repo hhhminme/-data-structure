@@ -13,10 +13,10 @@ int isEmpty(void) {
 	else return false; 
 }
 int isFull(void) {
-	int temp = (rear + 1) % MAX;
 	//원형 큐에서 rear+1을 MAX로 나눈 나머지값이 
+	//front와 같으면 큐는 가득 차있는 상태 
+	int temp = (rear + 1) % MAX;
 	if (temp == front)
-		//front와 같으면 큐는 가득 차있는 상태 
 		return true;
 	else
 		return false;
