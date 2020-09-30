@@ -1,52 +1,59 @@
+//time.h 헤더파일 사용해서 
+//power_loop (반복 하는 함수) 거듭 곱 
+//power_rec (recursive 거듭곱)... 
+// 두가지 시간 측정 할 수 있도록 만들기. 
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#define MAX 100	
-
-int front = -1; 
-int rear = -1; 
-
-int queue[MAX]; 
-
-int isEmpty(void) {
-	if (front == rear)
-		//front와 rear가 같으면 비어있는 상태 
-		return true;
-	else return false; 
-}
-int isFull(void) {
-	int temp = (rear + 1) % MAX; 
-	//원형 큐에서 rear + 1을 MAX 로 나눈 나머지 값이 
-	if (temp == front)
-		//front 와 같으면 큐는 가득찬 상태 
-		return true;
-	else
-		return false;
-}
-void addQ(int val) {
-	if (isFull()) {
-		printf("Queue is full\n");
-	}
-	else {
-		rear = (rear + 1) % MAX;
-		queue[rear] = val;
-	}
-}
-int deleteQ() {
-	if (isEmpty() == true) {
-		printf("queue is empty\n");
-	}
-	else {
-		front = (front + 1) % MAX; 
-		return queue[front]; 
-	}
-}
+#include <time.h>
+int power_loop(int num, int x);
+int power_rec(int num, int x);
 int main(void) {
-	int i = 0; 
-	while (isFull() != true) {
-		addQ(i); 
-		i++;
-	}
-	while (isEmpty() != true) {
-		printf("%d\n", deleteQ());
-	}
-	return 0;
+	clock_t start, end; 
+	double duration; 
+	int result, num, x; 
+
+	printf("곱할 숫자를 입력해주세요(num)");
+	scanf("%d", &num);
+	printf("횟수를 입력해주세요(x)");
+	scanf("%d", &x);
+
+	start = clock(); 
+	result = power_rec(num,x); //num 을 x번 반복
+	//power_rec(num,x)
+	end = clock(); 
+
+	duration = (double)(start - end);
+
+	printf("duration : %lf\n", duration/CLOCKS_PER_SEC);
+	printf("result : %d\n", result);
+
+	return 0; 
 }
+
+int power_loop(int num, int x) {
+	int result = 1;
+	for (int i = 0; i <= x; i++) {
+		result = result *num;
+		printf("%d : result",result);
+	}
+	return result; 
+}
+
+int power_rec(int num, int x) {
+	if (n == 0) {
+		return 1.0;
+	}
+	else if (n % 2 == 0) {
+		printf("-연산실행:곱 \n");
+		return power_rec(x * x, n / 2);
+	}
+	else if (n % 2 == 1) {
+		printf("-연산실행:곱 2회\n");
+		return x* power_rec(x * x, n / 2);
+	}
+}
+
+
+
+
+
