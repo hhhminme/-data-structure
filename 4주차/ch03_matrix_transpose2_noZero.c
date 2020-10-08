@@ -6,7 +6,7 @@ typedef struct {
 	int value;
 } element;
 
-typedef struct SparseMatrix {
+typedef struct SparseMatrix { //희소행렬
 	element data[MAX_TERMS];
 	int rows;	// 행의 개수
 	int cols;	// 열의 개수

@@ -27,7 +27,16 @@
     <ClCompile Include="..\3주차\poly1_minus.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="poly2_minus.cpp">
+    <ClCompile Include="ch03_matrix_transpose1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch03_matrix_transpose2_noZero.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch03_poly2_add_noZero.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="mat_mul.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
