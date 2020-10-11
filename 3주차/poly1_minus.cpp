@@ -1,4 +1,4 @@
-#include <stdio.h>
+ #include <stdio.h>
 #define MAX_DEGREE 101 	// 다항식의 최대차수 + 1
 typedef struct {
 	int degree; //차수 

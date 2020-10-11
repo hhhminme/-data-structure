@@ -14,6 +14,8 @@ int main(void)
 	//student p라고 하면 static 하게 p라는 구조체 선언
 	//student* p는 4byte저장할 수 있는 주소 저장 
 	p = (student*)malloc(sizeof(student)); //student의 크기만큼 메모리 할당. *p의 주소에 heap으로부터 가져온 300번 주소를 저장
+	printf("sizeof p : %d \n",sizeof(p)); // 4
+	printf("sizeof studnet : %d \n", sizeof(student)); //24
 	if (p == NULL) {
 		fprintf(stderr, "메모리가 부족해서 할당할 수 없습니다.\n");
 		//fprintf은 file 입출력임 strerr에 특정 파일의 핸들을 넣어서 오류를 출력하는것임. strerr를 통해 오른쪽의 말이 나간다. 현재의 설정은 output이 모니터

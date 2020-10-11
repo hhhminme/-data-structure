@@ -1,6 +1,3 @@
-﻿  ch03_struc_malloc.c
-C:\Users\허민\Google 드라이브\자료구조\4주차\ch03_struc_malloc.c(16,22): warning C4013: 'malloc'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\허민\Google 드라이브\자료구조\4주차\ch03_struc_malloc.c(20,7): warning C4013: 'exit'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\허민\Google 드라이브\자료구조\4주차\ch03_struc_malloc.c(31,6): warning C4013: 'free'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
-C:\Users\허민\Google 드라이브\자료구조\4주차\ch03_struc_malloc.c(22,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  Source.cpp
+C:\Users\허민\Google 드라이브\자료구조\5주차\Source.cpp(14,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   5주차.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\5주차.exe

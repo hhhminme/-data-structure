@@ -39,5 +39,8 @@
     <ClCompile Include="..\..\..\Downloads\ch04_stack_struct_3.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -23,9 +23,9 @@ int main(void)
 	SparseMatrix m = {
 		{	{ 0, 3, 7 },{ 1, 0, 9 },{ 1, 5, 8 },{ 3, 0, 6 },
 			{ 3, 1, 5 },{ 4, 5, 1 },{ 5, 2, 2 } },
-		6,
-		6,
-		7
+		6, //열의 개수
+		6, //행의 개수 
+		7  //항의 개수
 	};
 	SparseMatrix result;
 	result = matrix_transpose2(m);
