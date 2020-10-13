@@ -60,8 +60,8 @@ int eval(char exp[])
 	init_stack(&s);
 	for (i = 0; i<len; i++) {
 		ch = exp[i];
-		if (ch != '+' && ch != '-' && ch != '*' && ch != '/') {
-			value = ch - '0';	// 입력이 피연산자이면
+		if (ch != '+' && ch != '-' && ch != '*' && ch != '/') { //숫자라는 의미
+			value = ch - '0';	// 입력이 피연산자이면 0을 빼주면 숫자를 구할 수 있다. ->ascii 코드 활용
 			push(&s, value);
 		}
 		else {	// 연산자이면 피연산자를 스택에서 제거
@@ -81,8 +81,8 @@ int eval(char exp[])
 int main(void)
 {
 	int result;
-	printf("후위표기식은 82/3-32*+\n");
-	result = eval("82/3-32*+");
+	printf("후위표기식은 233*-\n");
+	result = eval("233*-");
 	printf("결과값은 %d\n", result);
 	return 0;
 }

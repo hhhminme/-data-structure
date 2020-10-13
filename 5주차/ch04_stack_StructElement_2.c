@@ -9,6 +9,7 @@ typedef struct {
 	char	name[MAX_STRING];
 	char	address[MAX_STRING];
 } element;
+
 element  stack[MAX_STACK_SIZE];
 int  top = -1;
 
@@ -61,7 +62,7 @@ int main(void)
 	for (int i = 0; i < 3; i++) {
 		push(ie[i]);
 	}
-	int cnt = top + 1;
+	int cnt = top + 1; //왜냐하면 top = -1 을 가르키기 떄문이다. 
 	for (int i = 0; i < cnt; i++) {
 		oe = pop();
 		printf("학번: %d\n", oe.student_no);

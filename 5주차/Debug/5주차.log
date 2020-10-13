@@ -1,3 +1,1 @@
-﻿  Source.cpp
-C:\Users\허민\Google 드라이브\자료구조\5주차\Source.cpp(14,2): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-  5주차.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\5주차.exe
+﻿  5주차.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\5주차.exe

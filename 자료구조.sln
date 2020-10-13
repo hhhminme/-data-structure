@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "자료구조", "자료구조\자료구조.vcxproj", "{46F2D528-5F73-4232-806A-7891FE1C0855}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "정렬", "자료구조\자료구조.vcxproj", "{46F2D528-5F73-4232-806A-7891FE1C0855}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "1주차", "ch01_test02\ch01_test02.vcxproj", "{2A60D9FD-04FE-4C0C-A4E5-5BD10262132C}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "4주차", "4주차\4주차.vcxproj", "{22B84589-0103-4AFB-A3AC-842D5A6D944F}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5주차", "5주차\5주차.vcxproj", "{D15100F5-E722-4F29-AFB7-8955DB5AF7E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "6주차", "6주차\6주차.vcxproj", "{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{D15100F5-E722-4F29-AFB7-8955DB5AF7E8}.Release|x64.Build.0 = Release|x64
 		{D15100F5-E722-4F29-AFB7-8955DB5AF7E8}.Release|x86.ActiveCfg = Release|Win32
 		{D15100F5-E722-4F29-AFB7-8955DB5AF7E8}.Release|x86.Build.0 = Release|Win32
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Debug|x64.ActiveCfg = Debug|x64
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Debug|x64.Build.0 = Debug|x64
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Debug|x86.ActiveCfg = Debug|Win32
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Debug|x86.Build.0 = Debug|Win32
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Release|x64.ActiveCfg = Release|x64
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Release|x64.Build.0 = Release|x64
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Release|x86.ActiveCfg = Release|Win32
+		{AD401457-E0CC-41D3-BE89-BBB9EC357A1E}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
