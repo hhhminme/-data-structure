@@ -62,8 +62,8 @@ element peek(StackType *s)
 
 element here = { 1,0 }, entry = { 1,0 };
 
-char maze[MAZE_SIZE][MAZE_SIZE] = {
-	{ '1', '1', '1', '1', '1', '1' },
+char maze[MAZE_SIZE][MAZE_SIZE] = { //1은벽, 0은 길 
+{ '1', '1', '1', '1', '1', '1' },
 { 'e', '0', '1', '0', '0', '1' },
 { '1', '0', '0', '0', '1', '1' },
 { '1', '0', '1', '0', '1', '1' },

@@ -21,7 +21,16 @@
     <ClCompile Include="..\5주차\ch04_postfix_evaluation_7.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\5주차\ch04_infix_calculation_8.c">
+    <ClCompile Include="..\..\..\Downloads\ch04_infix_calculation_8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\5주차\ch04_maze_9.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\ch04_ex_maze.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\5주차\ch05_linear_queue.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
