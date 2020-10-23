@@ -30,7 +30,19 @@
     <ClCompile Include="..\..\..\Downloads\ch04_ex_maze.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\5주차\ch05_linear_queue.c">
+    <ClCompile Include="..\..\..\Downloads\ch05_dequeue.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\ch05_linear_queue (1).c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\ch05_simulation.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\ch05_buffer.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Downloads\ch05_circular_queue (1).c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

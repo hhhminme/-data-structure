@@ -34,7 +34,7 @@ int main(void)
 	return 0;
 }
 
-SparseMatrix matrix_transpose2(SparseMatrix a)
+SparseMatrix matrix_transpose2(SparseMatrix a) //계산된 전치행렬 구조체 b를 반환 
 {
 	SparseMatrix b;
 	int bindex;		// 행렬 b에서 현재 저장 위치
@@ -44,9 +44,9 @@ SparseMatrix matrix_transpose2(SparseMatrix a)
 	if (a.terms > 0) {
 		bindex = 0;
 		// row 값 오름차순으로 정렬하기 위한 for문장.
-		for (int c = 0; c < a.cols; c++) {
+		for (int c = 0; c < a.cols; c++) { //기존 행열의 열이 행으로 변경되기 때문에 
 			for (int i = 0; i < a.terms; i++) {
-				if (a.data[i].col == c) {
+				if (a.data[i].col == c) { //0열에 있는 요소를 모두 찾아 전치행렬의 0열에 저장 
 					b.data[bindex].row = a.data[i].col;
 					b.data[bindex].col = a.data[i].row;
 					b.data[bindex].value = a.data[i].value;

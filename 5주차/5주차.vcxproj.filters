@@ -15,9 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ch05_circular_queue.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="..\4주차\ch03_int_sum.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -46,6 +43,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="ch04_stack_StructMalloc_4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Source1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
