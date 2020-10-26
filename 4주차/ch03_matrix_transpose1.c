@@ -7,9 +7,10 @@ void matrix_print(int A[ROWS][COLS]);
 
 int main(void)
 {
-	int array1[ROWS][COLS] = { { 2,3,0 },
-				{ 8,9,1 },
-				{ 7,0,5 } };
+	int array1[ROWS][COLS] = { 
+		{ 2,3,0 },
+		{ 8,9,1 },
+		{ 7,0,5 } };
 	int array2[ROWS][COLS];
 	matrix_transpose(array1, array2);
 	matrix_print(array1);

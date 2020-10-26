@@ -56,10 +56,15 @@ element peek(StackType *s)
 
 int main(void)
 {
-	StackType *s;
+	StackType *s; //포인터만 선언하고 //동적으로 공간 스택선언
 
 	s = (StackType *)malloc(sizeof(StackType));
+	//malloc을 통해 동적으로 메모리를 할당 
+	//기존에 malloc안썼으면 &s 로 파라메터를 넘겨줌 
+	//지금은 포인터로 선언해주었기 때문에 s로만 넘겨주면 된다. 
+	//공간을 잡아주는 방식이 static이냐 dynamic이냐를 확인
 	init_stack(s);
+	//기존 스택에 대한 연산자들은 함수를 동일하게 사용 
 	push(s, 1);
 	push(s, 2);
 	push(s, 3);

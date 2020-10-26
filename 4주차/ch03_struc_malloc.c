@@ -12,7 +12,7 @@ int main(void)
 {
 	student* p;
 	//student p라고 하면 static 하게 p라는 구조체 선언
-	//student* p는 4byte저장할 수 있는 주소 저장 
+	//student* p는 4byte저장할 수 있는 주소 저장
 	p = (student*)malloc(sizeof(student)); //student의 크기만큼 메모리 할당. *p의 주소에 heap으로부터 가져온 300번 주소를 저장
 	printf("sizeof p : %d \n",sizeof(p)); // 4
 	printf("sizeof studnet : %d \n", sizeof(student)); //24

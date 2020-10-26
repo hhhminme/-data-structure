@@ -55,10 +55,10 @@ int check_matching(const char *in)
 {
 	StackType s;
 	char ch, open_ch;
-	int i, n = strlen(in);  	// n= 문자열의 길이
+	int n = strlen(in);  	// n= 문자열의 길이
 	init_stack(&s);				// 스택의 초기화
 
-	for (i = 0; i < n; i++) {
+	for (int i = 0; i < n; i++) {
 		ch = in[i];				// ch = 다음 문자
 		switch (ch) {
 		case '(':   case '[':    case '{': //왼쪽 괄호를 만나면

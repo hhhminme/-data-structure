@@ -56,12 +56,15 @@ element pop(StackType *s)
 int main(void)
 {
 	StackType s;
+
 	init_stack(&s);
 	push(&s, 1);
 	push(&s, 2);
 	push(&s, 3);
 	push(&s, 4);
 	push(&s, 5);
+	printf("%d \n", pop(&s));
+	printf("%d \n", pop(&s));
 	printf("%d \n", pop(&s));
 	printf("%d \n", pop(&s));
 	printf("%d \n", pop(&s));
