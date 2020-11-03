@@ -1,4 +1,2 @@
-﻿  ch05_simulation.c
-C:\Users\허민\Downloads\ch05_simulation.c(45,11): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'element'
-C:\Users\허민\Downloads\ch05_simulation.c(81,12): warning C4013: 'time' undefined; assuming extern returning int
+﻿  ch04_paren_matching.c
   6주차.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\6주차.exe

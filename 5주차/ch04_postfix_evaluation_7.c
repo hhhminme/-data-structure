@@ -60,6 +60,8 @@ int eval(char exp[])
 	init_stack(&s);
 	for (i = 0; i<len; i++) {
 		ch = exp[i];
+		//피연산자에 대한 처리 부분
+		//ch에는 피연산자에 해당하는 ascii코드가 들어있다
 		if (ch != '+' && ch != '-' && ch != '*' && ch != '/') { //숫자라는 의미
 			value = ch - '0';	// 입력이 피연산자이면 0을 빼주면 숫자를 구할 수 있다. ->ascii 코드 활용
 			push(&s, value);

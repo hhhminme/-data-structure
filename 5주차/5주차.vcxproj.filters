@@ -36,9 +36,6 @@
     <ClCompile Include="Source.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ch04_stack_malloc_5.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ch04_stack_StructElement_2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -46,6 +43,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Source1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ch04_stack_realloc_5.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

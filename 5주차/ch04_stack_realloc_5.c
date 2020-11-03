@@ -59,9 +59,9 @@ int main(void)
 
 	init_stack(&s);
 	push(&s, 1);
-	push(&s, 2);
-	push(&s, 3);
-	push(&s, 4);
+	push(&s, 2);//full 발생 
+	push(&s, 3); //full 발생 //공간을 4로 만든다음에 pop
+	push(&s, 4); //3->4 넘어갈 때 full 발생
 	push(&s, 5);
 	printf("%d \n", pop(&s));
 	printf("%d \n", pop(&s));

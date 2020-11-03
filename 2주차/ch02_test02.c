@@ -41,7 +41,7 @@ double power_rec(double x, int n) {
 	}
 	else if (n % 2 == 1) {
 		printf("-연산실행:곱 2회\n");
-		return x* power_rec(x * x, n / 2);
+		return x* power_rec(x * x, n-1 / 2);
 	}
 }
 

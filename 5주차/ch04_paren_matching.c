@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #define MAX_STACK_SIZE 100
-//
+
 typedef char element;		
 typedef struct {
 	element data[MAX_STACK_SIZE];
@@ -53,11 +53,12 @@ element peek(StackType *s)
 //
 int check_matching(const char *in)
 {
-	StackType s;
-	char ch, open_ch;
+	StackType s; //구조체 타입으로 할당하면 이 안에 stack 공가 할당
+	//구조체 안에 100개의 엘레먼트가 있고 top변수가 엘레먼트를 가르킴
+	char ch, open_ch; //파라메타로 수식 스트링이 넘어옴
 	int n = strlen(in);  	// n= 문자열의 길이
 	init_stack(&s);				// 스택의 초기화
-
+	//선언한 s에 대해서 포인트를 넘긴다
 	for (int i = 0; i < n; i++) {
 		ch = in[i];				// ch = 다음 문자
 		switch (ch) {

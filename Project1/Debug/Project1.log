@@ -1,0 +1,3 @@
+﻿  ch06_lab01.c
+C:\Users\허민\Google 드라이브\자료구조\Project1\ch06_lab01.c(21,20): warning C4013: 'malloc' undefined; assuming extern returning int
+  Project1.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\8주차.exe
