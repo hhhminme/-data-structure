@@ -1,5 +1,3 @@
 ﻿  Source.c
-C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(45,16): warning C4047: 'function': 'QueueType *' differs in levels of indirection from 'QueueType **'
-C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(45,16): warning C4024: 'is_full': different types for formal and actual parameter 1
-C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(71,12): warning C4013: 'time' undefined; assuming extern returning int
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(51,21): warning C4047: '==': 'element' differs in levels of indirection from 'void *'
   연습문제 4장.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\연습문제 4장.exe
