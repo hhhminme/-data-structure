@@ -1,0 +1,4 @@
+﻿  ch07_stack_linked_list_05.c
+C:\Users\허민\Google 드라이브\자료구조\9주차\ch07_stack_linked_list_05.c(49,7): warning C4013: 'exit' undefined; assuming extern returning int
+C:\Users\허민\Google 드라이브\자료구조\9주차\ch07_stack_linked_list_05.c(58): warning C4715: 'pop': not all control paths return a value
+  9주차.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\9주차.exe

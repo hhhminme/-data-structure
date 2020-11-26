@@ -1,75 +1,80 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-typedef int element; 
+typedef int element;
+typedef struct {
+	element data; 
+	QueueNode* link;
+}QueueNode;
 
-typedef struct ListNode {
-	element data;
-	struct ListNode* link;
-} ListNode;
+typedef struct {
+	QueueNode* front;
+	QueueNode* rear;
+}LinkedQueueType;
 
-ListNode* insert_first(ListNode* head, element value) {
-	ListNode* p = (ListNode*)malloc(sizeof(ListNode));
-	
-	p->data = value; 
-	p->link = head; 
-	head = p; 
-	return head; 
-}
-ListNode* insert(ListNode* head, ListNode* pre, element value) {
-	ListNode* p = (ListNode*)malloc(sizeof(ListNode));
-	p->data = value; 
-	p->link = pre->link; 
-	pre->link = p; 
-	return head; 
-}
-ListNode* delete_first(ListNode* head) {
-	ListNode* removed; 
-	if (head == NULL) return NULL;
-	removed = head; 
-	head = removed->link;
-	free(removed);
-	return head; 
+void init(LinkedQueueType* q) {
+	q->front = 0;
+	q->rear = 0;
 }
 
-ListNode* delete_pre(ListNode* head, ListNode* pre) {
-	ListNode* removed; 
-	removed = pre->link; 
-	pre->link = removed->link;
-	free(removed); 
-	return head; 
+int is_empty(LinkedQueueType* q) {
+	return(q->front == NULL);
 }
-void print_list(ListNode* head) {
-	for (ListNode* p = head; p != NULL; p = p->link) {
-		printf("%d -> ", p->data);
+
+int is_full(LinkedQueueType* q) {
+	return 0;
+}
+
+void enqueue(LinkedQueueType* q, element data) {
+	QueueNode* temp = (QueueNode*)malloc(sizeof(QueueNode));
+	temp->data = data; 
+	temp->link = NULL;
+
+	if (is_empty(q)) {
+		fprintf(stderr, "queue가 비여있습니다.");
+		exit(1);
 	}
-		printf("NULL\n");
+	q->rear->link = temp; 
+	q->rear = temp; 
 }
 
-ListNode* search_list(ListNode* head, element vlaue) {
-	ListNode* p = head; 
-	if (p->data == NULL) return NULL; 
-	while (p->link != NULL) {
-		if (p->data = vlaue) return p; 
-		p = p->link;
-	}
-	return NULL; //탐색실패
-}
-int main(void) {
-	ListNode* head = NULL; //linked list를 가르키는 head pointer
-	
-	head = insert_first(head, 10);
-	print_list(head);
-	head = insert_first(head, 20);
-	print_list(head);
-	head = insert_first(head, 30);
-	print_list(head);
-
-	if (search_list(head, 20) != NULL) {
-		printf("데이터 값 (%d) 발견\n", 20);
+element dequeue(LinkedQueueType* q) {
+	QueueNode* temp = q->front;
+	element data; 
+	if (is_empty(q)) {
+		fprintf(stderr, "queue가 비여있습니다.");
+		exit; 
 	}
 	else {
-		printf("데이터 값 (%d) 찾지못함\n", 20);
+		data = temp->data;
+		q->front = q->front->link;
+		if(q->front == NULL) {
+			q->rear = NULL;
+		}
+		free(temp);
+		return data; 
 	}
-	return 0; 
+}
+void print_queue(LinkedQueueType* q) {
+	QueueNode* temp;
+	for (temp = q->front; temp != NULL; temp = temp->link) {
+		printf("%d->", temp->data);
+	}
+	printf("NULL\n");
+}
+
+int main(void) {
+	LinkedQueueType* Queue;
+
+	init(&Queue);
+
+	enqueue(&Queue, 10); print_queue(&Queue);
+	enqueue(&Queue, 20); print_queue(&Queue);
+	enqueue(&Queue, 30); print_queue(&Queue);
+
+	dequeue(&Queue); print_queue(&Queue);
+	dequeue(&Queue); print_queue(&Queue);
+	dequeue(&Queue); print_queue(&Queue);
+
+	return 0;
 }

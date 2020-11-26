@@ -1,3 +1,53 @@
 ﻿  Source.c
-C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(51,21): warning C4047: '==': 'element' differs in levels of indirection from 'void *'
-  연습문제 4장.vcxproj -> C:\Users\허민\Google 드라이브\자료구조\Debug\연습문제 4장.exe
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(7,2): error C2061: syntax error: identifier 'QueueNode'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(8,1): error C2059: syntax error: '}'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(11,2): error C2061: syntax error: identifier 'QueueNode'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(12,11): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(13,1): error C2059: syntax error: '}'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(15,26): error C2143: syntax error: missing ')' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(15,26): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(15,29): error C2059: syntax error: ')'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(15,31): error C2054: expected '(' to follow 'q'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(20,29): error C2143: syntax error: missing ')' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(20,29): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(20,32): error C2059: syntax error: ')'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(20,34): error C2054: expected '(' to follow 'q'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(24,28): error C2143: syntax error: missing ')' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(24,28): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(24,31): error C2059: syntax error: ')'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(24,33): error C2054: expected '(' to follow 'q'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(28,29): error C2143: syntax error: missing ')' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(28,29): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(28,34): error C2370: 'element': redefinition; different storage class
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(4): message : see declaration of 'element'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(28,42): error C2146: syntax error: missing ';' before identifier 'data'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(28,46): error C2059: syntax error: ')'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(28,48): error C2054: expected '(' to follow 'data'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(41,32): error C2143: syntax error: missing ')' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(41,32): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(41,35): error C2059: syntax error: ')'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(41,37): error C2054: expected '(' to follow 'q'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(58,33): error C2143: syntax error: missing ')' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(58,33): error C2143: syntax error: missing '{' before '*'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(58,36): error C2059: syntax error: ')'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(58,38): error C2054: expected '(' to follow 'q'
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(67,17): error C2065: 'LinkedQueueType': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(67,24): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(67,17): warning C4552: '*': result of expression not used
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(69,6): warning C4013: 'init' undefined; assuming extern returning int
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(69,13): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(71,9): warning C4013: 'enqueue' undefined; assuming extern returning int
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(71,16): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(71,34): warning C4013: 'print_queue' undefined; assuming extern returning int
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(71,41): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(72,16): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(72,41): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(73,16): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(73,41): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(75,9): warning C4013: 'dequeue' undefined; assuming extern returning int
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(75,16): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(75,37): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(76,16): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(76,37): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(77,16): error C2065: 'Queue': undeclared identifier
+C:\Users\허민\Google 드라이브\자료구조\연습문제 4장\Source.c(77,37): error C2065: 'Queue': undeclared identifier

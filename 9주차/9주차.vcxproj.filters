@@ -27,5 +27,11 @@
     <ClCompile Include="ch07_multigame_02.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ch07_queue_linked_list_06.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ch07_stack_linked_list_05.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
